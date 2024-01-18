@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KB Demo</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1 class="text-center my-3">Knowledge Based Model Demo</h1>
+
+    <div class="container-fluid dvh-100">
+        <div class="row h-100">
+            <div class="col-lg-4 col-12">
+                <div class="examples-container">
+                    <div class="example">
+                        <p><span class="me-2 mb-1 text-bold">City name:</span>Sharm El Sheikh</p>
+                        <p><span class="me-2 mb-1 text-bold">Categories:</span>["beach", "entertainment", "museum"]</p>
+                        <p><span class="me-2 mb-1 text-bold">From:</span>"2023-7-10"</p>
+                        <p><span class="me-2 mb-1 text-bold">To:</span>"2023-7-20"</p>
+                        <p><span class="me-2 mb-1 text-bold">Prevented ages:</span>none</p>
+                        <p><span class="me-2 mb-1 text-bold">Category counter:</span>{
+                            "entertainment": 1, "sightseeing": 3,
+                            "remedy": 2, "history": 1, "adventure": 2, "streets": 1,
+                            "desert": 1, "garden": 2, "beach": 3, "museum": 1,
+                            "monument": 1, "religious": 0, "mountain": 2
+                            }</p>
+
+                        <button class="btn btn-primary btn1">Execute</button>
+                    </div>
+                    <div class="example">
+                        <p><span class="me-2 mb-1 text-bold">City name:</span>Cairo</p>
+                        <p><span class="me-2 mb-1 text-bold">Categories:</span>["sightseeing", "museum"]</p>
+                        <p><span class="me-2 mb-1 text-bold">From:</span>"2023-7-10"</p>
+                        <p><span class="me-2 mb-1 text-bold">To:</span>"2023-7-20"</p>
+                        <p><span class="me-2 mb-1 text-bold">Prevented ages:</span>none</p>
+                        <p><span class="me-2 mb-1 text-bold">Category counter:</span>{
+                            "entertainment": 1, "sightseeing": 3,
+                            "remedy": 2, "history": 1, "adventure": 2, "streets": 1,
+                            "desert": 1, "garden": 2, "beach": 1, "museum": 1,
+                            "monument": 1, "religious": 0, "mountain": 2
+                            }</p>
+                        <button class="btn btn-primary btn2">Execute</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-12">
+                <div class="result-container h-100">
+                    <div class="result">
+                        <div class="loading d-none justify-content-center align-items-center w-100 h-100">
+                            <div class="lds-roller">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="data d-block">
+                            <h2 class="result-header text-center mb-3"></h2>
+                            <div class="attractions-container">
+                                <!-- <div class="attraction">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="./pyramids1.jpeg" alt="" class="w-100">
+                                        </div>
+                                        <div class="col-9 d-flex flex-column justify-content-center">
+                                            <p class="mb-2"><span class="me-2 mb-1 text-bold">Attraction name:</span>Sharm
+                                                El
+                                                Sheikh</p>
+                                            <p class="mb-2"><span class="me-2 mb-1 text-bold">City name:</span>Sharm El
+                                                Sheikh
+                                            </p>
+                                            <p class="mb-0"><span class="me-2 mb-0 text-bold">Score:</span>10</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
