@@ -34,7 +34,8 @@
 }
 
 .result {
-    height: calc(100dvh - 123px);
+    /* height: calc(100dvh - 123px); */
+    height: calc(100dvh - 131px);
     overflow: auto;
     padding: 20px;
     background-color: rgb(227 235 243);
